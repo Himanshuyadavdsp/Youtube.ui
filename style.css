@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.nav {
+    /* background: red; */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    height: 3rem;
+    /* margin-top: 1rem; */
+    overflow-y: hidden;
+}
+.leftlogo{
+    background: blue;
+}
+.searchbox{
+    background: red;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    position: relative;
+    
+
+}
+.inputdiv{
+    flex: 1;
+}
+input{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 1px solid rgb(201, 201, 201);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+     /* margin-top: 15px;
+     margin-bottom: 33px; */
+     height: 18px;
+     width: 80%;
+     padding: 5px;
+     background: green;
+     
+    }
+.upload{
+    background: green;
+    display: flex;
+    justify-content: space-evenly;
+    width: 10%;
+    flex-wrap: wrap;
+
+}
+.trbtn{
+    background-color: transparent;
+    border: none;
+}
+#mic{
+    margin-left: 3rem;
+    padding: 5px;
+    border-radius:  50px;
+    border: none;
+    height: 2rem;
+    width: 2rem;
+}
+#search{
+    border-radius: 0 50% 50% 0rem;
+    min-width: 2rem;
+    margin-left: -4px;
+    border: 1px solid rgb(201, 201, 201);
+    height: 2rem;
+}
+/* #topnavbar button{
+    padding: 5px;
+    padding-right: 1.5rem;
+    background: yellow;
+} */
+.logo{
+    height: 45px;
+    margin-left: 0;
+    background: blue;
+}
+
+.row{
+    /* background: purple; */
+    height: 10rem;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+}
+.video{
+    /* background: yellow; */
+    height: 100%;
+    width: 15rem;
+    margin-top: 2.5rem;
+}
+.img{
+    /* background: black; */
+    width: 100%;
+    height: 80%;
+    
+
+}
+.suggestion{
+    /* background: green; */
+    width: 100%;
+    
+}
+.img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 2%;
+}
+.title{
+    width: 100%;
+    height: 20%;
+    margin-top: 10px;
+    margin-bottom: 2rem;
+    
+    /* text-align: center; */
+    /* background: red; */
+}
+
+
+
+.icons {
+    width: 25px;
+   justify-content: space-between;
+   /* background-color: aqua; */
+}
+button:hover{
+    cursor: pointer;
+
+}
+
+#secondnavbar {
+     padding: 10px;     
+}
+
+
+.tag{
+   margin-left: 20px;
+   padding: 5px;
+   
+}
+
+
+.Shorts {
+    display: flex;
+    flex-direction: column;
+}
+
+.Shorts button {
+    /* background-color: red; */
+    margin-bottom: 10px;
+    width: 150px;
+    height: 30px;
+    background-color: transparent;
+    text-align: left;
+    border: none;
+    padding: 0px 5px;
+    border-radius: 1rem;
+    margin-left: 1rem;
+    &:hover{
+        background-color: rgb(238, 238, 238);
+    }
+}
+
+.main {
+    /* background-color: rgb(255, 145, 0); */
+    display: flex;
+    width: 100%;
+}
+.right{
+    /* background-color: aqua; */
+    width: 86%;
+}
+.left{
+    width: 14%;
+    /* background-color: rgb(238, 238, 238); */
+}
+
+@media (max-width:768px){
+    .left{
+        display: none;
+    }
+    .right{
+        /* background-color: aqua; */
+        width: 100%;
+    }
+    .row{
+        height: 8rem;
+    }
+    .video{
+        /* background: yellow; */
+        width: 12rem;
+    }
+    input{
+         width: 25rem;
+         
+    }
+    #search{
+        width: 5rem;
+        margin-left: -4px;
+    }
+}
